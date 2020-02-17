@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-//  Comporision between using state in a class component and using hooks in a functional component
+//  Comporision between using state in a class component and
+// using hooks in a functional component
 
 // Class component with state
 class MyClassComponent extends Component {
@@ -14,8 +15,8 @@ class MyClassComponent extends Component {
                 <h3>count: {this.state.count}</h3>
                 <input
                     type='button'
-                    onClick={() => this.setState({ count: this.state.count + 1 })} 
-                    value="Increase value"/>
+                    onClick={() => this.setState({ count: this.state.count + 1 })}
+                    value="Increase value" />
             </div>
         )
     }
@@ -27,12 +28,12 @@ export default MyClassComponent;
 
 export const MyFunctionalComponent = () => {
     const [count, setCount] = React.useState(0)
-    return(
+    return (
         <div>
             <h3>count: {count}</h3>
             <input
                 type='button'
-                onClick={()=>{setCount(count+1)}}
+                onClick={() => { setCount(count + 1) }}
                 value='Increase value'
             />
         </div>
