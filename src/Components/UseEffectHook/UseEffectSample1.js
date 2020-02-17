@@ -2,7 +2,7 @@
 import React from 'react'
 export const UseEffectComponent = () => {
     const [count, setCount] = React.useState(0)
-    const [effort, setEffort] = React.useState(0)
+    const [effort,] = React.useState(0)
 
     // Similar to componentDidMount and componentDidUpdate:
     // if effect returns a function, react will run it when it's time to cleanup
@@ -23,7 +23,7 @@ export const UseEffectComponent = () => {
 
     return (
         <div>
-            <p>You clicked <h3>{count}</h3></p>
+            <span>You clicked <i>{count}</i> times</span>
             <input
                 type='button'
                 onClick={() => setCount(count + 1)}

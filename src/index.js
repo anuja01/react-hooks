@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import MyClassComponent, { MyFunctionalComponent } from './Components/UseState/UseStateSample1';
 import { UseEffectComponent } from './Components/UseEffectHook/UseEffectSample1';
 import { OwnHook } from './Components/OwnHooks';
+import { MyUseReducer } from './Components/UseReducer';
 
 ReactDOM.render(
     <div>
@@ -23,6 +24,9 @@ ReactDOM.render(
         <hr />
         <p>Writing custom hooks</p>
         <OwnHook />
+        <hr />
+        <p>Sample of <code>useReducer</code> hook</p>
+        <MyUseReducer />
         <hr />
     </div>
     , document.getElementById('root'));
